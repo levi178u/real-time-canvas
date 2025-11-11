@@ -1,0 +1,185 @@
+:root {
+  --bg: #f4f6f8;
+  --accent: #2b6cb0;
+  --accent-light: #4a90e2;
+  --border: #e6e9ee;
+  --text: #333;
+  --text-light: #666;
+  --success: #27ae60;
+  --danger: #e74c3c;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  font-family: Inter, system-ui, Arial, sans-serif;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* Button Styles */
+button {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background: white;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #f9f9f9;
+  border-color: #999;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+button:active {
+  background: #f0f0f0;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: 2px solid var(--accent-light);
+  outline-offset: 2px;
+}
+
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Input Styles */
+input[type="color"] {
+  width: 100%;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 4px;
+  transition: all 0.2s ease;
+}
+
+input[type="color"]:hover {
+  border-color: #999;
+}
+
+input[type="color"]:focus {
+  outline: none;
+  border-color: var(--accent-light);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+input[type="text"],
+select {
+  padding: 8px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  color: var(--text);
+  transition: all 0.2s ease;
+}
+
+input[type="text"]:hover:not(:focus),
+select:hover:not(:focus) {
+  border-color: #999;
+}
+
+input[type="text"]:focus,
+select:focus {
+  outline: none;
+  border-color: var(--accent-light);
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.1);
+}
+
+input[type="range"] {
+  width: 100%;
+  height: 6px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: var(--border);
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--accent-light);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  background: #f0f7ff;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+  transform: scale(1.1);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: white;
+  border: 2px solid var(--accent-light);
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}
+
+input[type="range"]::-moz-range-thumb:hover {
+  background: #f0f7ff;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+  transform: scale(1.1);
+}
+
+/* Canvas Styles */
+canvas {
+  cursor: crosshair;
+  display: block;
+}
+
+/* Label Styles */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+select {
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 24px;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23333' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  padding-right: 32px;
+}
+
+

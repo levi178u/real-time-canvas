@@ -124,12 +124,10 @@ export const Canvas = forwardRef(({
             }
             cursorEl.appendChild(dot);
 
-            // Add user name
             const nameEl = document.createElement('span');
             nameEl.textContent = user.name || `User ${userId.slice(0, 6)}`;
             cursorEl.appendChild(nameEl);
 
-            // Add drawing indicator if user is drawing
             if (isDrawing) {
                 const drawingIndicator = document.createElement('span');
                 drawingIndicator.style.marginLeft = '4px';

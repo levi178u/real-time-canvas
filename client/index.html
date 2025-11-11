@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Collaborative Canvas</title>
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+<div id="app">
+<header>
+<h1>Collaborative Canvas</h1>
+<div id="users">Users: <span id="user-list">—</span></div>
+</header>
+
+
+<main>
+<aside class="toolbar">
+<label>Tool:
+<select id="tool-select">
+<option value="brush">Brush</option>
+<option value="eraser">Eraser</option>
+</select>
+</label>
+
+
+<label>Color:
+<input id="color" type="color" value="#000000" />
+</label>
+
+
+<label>Width:
+<input id="width" type="range" min="1" max="40" value="4" />
+<span id="width-display">4</span>
+</label>
+
+
+<div class="buttons">
+<button id="undo">Undo</button>
+<button id="redo">Redo</button>
+<button id="clear">Clear</button>
+</div>
+
+
+<div class="meta">
+<label>Room: <input id="room" value="default" /></label>
+<button id="join">Join Room</button>
+</div>
+
+
+<div class="status">Latency: <span id="latency">—</span> ms</div>
+</aside>
+
+
+<section class="canvas-wrap">
+<canvas id="canvas"></canvas>
+<div id="cursors"></div>
+</section>
+</main>
+
+
+<footer>
+<small>Open-source starter — explain every line when asked.</small>
+</footer>
+</div>
+
+
+<script src="/socket.io/socket.io.js"></script>
+<script type="module" src="./main.js"></script>
+<script type="module" src="/src/App.jsx"></script>
+
+</body>
+</html>

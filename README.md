@@ -232,18 +232,6 @@ The server will start on `http://localhost:3000` (or the port specified in `PORT
 4. Test thoroughly
 5. Submit a pull request
 
-##  Acknowledgments
-
-- Built with [Socket.io](https://socket.io/) for real-time communication
-- Uses [Express](https://expressjs.com/) for the web server
-- Canvas API for drawing operations
-
-##  Learning Resources
-
-- [Canvas API Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
-- [Socket.io Documentation](https://socket.io/docs/)
-- [WebSocket Protocol](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
-
 ---
 
-**Built with ❤️ by Anshuman**
+**Built with ❤️ by Kanha**

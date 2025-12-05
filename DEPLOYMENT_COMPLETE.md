@@ -54,10 +54,9 @@ client/
 │   ├── index.css                Global styling
 │   ├── main.jsx                 React entry point
 │   └── index.html               HTML template
-├── index.html                  (Legacy - not used)
-├── main.js                     (Legacy - not used)
-└── style.css                   (Legacy - not used)
-
+├── index.html                 
+├── main.js                     
+└── style.css                   
 server/
 ├── server.js                    Express + Socket.io
 ├── drawing-state.js             Drawing state management
